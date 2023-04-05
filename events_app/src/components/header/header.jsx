@@ -23,11 +23,16 @@ export const Header = () => {
                 <Link href="/about-us" passHref>
                   <a> About us</a>
                 </Link>
+                </li>
+                <li>
+                <Link href="/contact-us" passHref>
+                  <a> Contact us</a>
+                </Link>
               </li>
             </ul>
           </nav>
         </div>
-        <p className="title"> Sed ut perspiciatis unde omnis</p>
+        <p className="title"> Ankit Events</p>
       </div>
     </header>
   );
