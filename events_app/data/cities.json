@@ -1,0 +1,43 @@
+[
+    {
+      "name": "New York",
+      "country": "USA",
+      "population": 8537673
+    },
+    {
+      "name": "Los Angeles",
+      "country": "USA",
+      "population": 3977683
+    },
+    {
+      "name": "Toronto",
+      "country": "Canada",
+      "population": 2930000
+    },
+    {
+      "name": "Vancouver",
+      "country": "Canada",
+      "population": 647540
+    },
+    {
+      "name": "London",
+      "country": "UK",
+      "population": 8982000
+    },
+    {
+      "name": "Paris",
+      "country": "France",
+      "population": 2148000
+    },
+    {
+      "name": "Tokyo",
+      "country": "Japan",
+      "population": 13929286
+    },
+    {
+      "name": "Sydney",
+      "country": "Australia",
+      "population": 5029768
+    }
+  ]
+  
