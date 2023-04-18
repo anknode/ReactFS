@@ -1,43 +1,35 @@
 [
     {
-      "name": "New York",
-      "country": "USA",
-      "population": 8537673
+      "id": "1",
+      "name": "New Delhi"
     },
     {
-      "name": "Los Angeles",
-      "country": "USA",
-      "population": 3977683
+      "id": "2",      
+      "name": "Patna"
     },
     {
-      "name": "Toronto",
-      "country": "Canada",
-      "population": 2930000
+      "id": "3",
+      "name": "Banglore"
     },
     {
-      "name": "Vancouver",
-      "country": "Canada",
-      "population": 647540
+      "id": "4",
+      "name": "Mumbai"
+    }, 
+    {
+      "id": "5",
+      "name": "Chennai"
     },
     {
-      "name": "London",
-      "country": "UK",
-      "population": 8982000
+      "id": "6",
+      "name": "Pune"
     },
     {
-      "name": "Paris",
-      "country": "France",
-      "population": 2148000
+      "id": "7",
+      "name": "Jaipur"
     },
     {
-      "name": "Tokyo",
-      "country": "Japan",
-      "population": 13929286
-    },
-    {
-      "name": "Sydney",
-      "country": "Australia",
-      "population": 5029768
+      "id": "8",
+      "name": "Bhopal"
     }
   ]
   
