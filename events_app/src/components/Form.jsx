@@ -1,13 +1,10 @@
+import React, { useState, useEffect } from "react";
 import { styled } from "@mui/system";
 import { makeStyles } from "@mui/styles";
 import {
   createTheme,
   useTheme,
 } from '@mui/material/styles';
-import { 
-  useState,
-  useEffect,
- } from "react";
 import {
   TextField,
   Button,
@@ -19,6 +16,7 @@ import {
   Select,
   MenuItem,
 } from "@mui/material";
+import { v4 as uuidv4 } from 'uuid'; // Import the UUID library
 
 const Form = () => {
   const [values, setValues] = useState({
@@ -46,7 +44,7 @@ const Form = () => {
     });
   };
 
-  const handleSubmit = async (event) => {
+  const onSubmit = async (event) => {
     event.preventDefault();
     const data = {
       id: uuidv4(),
@@ -67,7 +65,7 @@ const Form = () => {
   return (
     <Box mt={5}>
       <Typography variant="h4">Contact Form</Typography>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={onSubmit}>
         <Grid container spacing={2} mt={2}>
           <Grid item xs={12}>
             <TextField
@@ -105,7 +103,7 @@ const Form = () => {
                   <em>None</em>
                 </MenuItem>
                 {cities.map((city) => (
-                  <MenuItem key={city.name} value={city}>
+                  <MenuItem key={city.name} value={city.name}> {/* Fix: Set value to city.name */}
                     {city.name}
                   </MenuItem>
                 ))}

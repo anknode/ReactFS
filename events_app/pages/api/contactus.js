@@ -1,3 +1,5 @@
+// api/contactus.js
+
 import path from 'path';
 import fs from 'fs';
 import { v4 as uuidv4 } from 'uuid';
@@ -20,7 +22,11 @@ export default function handler(req, res) {
   const { method } = req;
 
   const filePath = buildPath();
-  const contactusData = extractData(filePath);
+  let contactusData = extractData(filePath); // Change to let to allow reassignment
+
+  if (!Array.isArray(contactusData)) { // Check if contactusData is not an array, and initialize as empty array if needed
+    contactusData = [];
+  }
 
   if (method === 'POST') {
     const { name, email, city } = req.body;
