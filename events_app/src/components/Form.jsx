@@ -20,7 +20,6 @@ import {
   MenuItem,
 } from "@mui/material";
 
-
 const Form = () => {
   const [values, setValues] = useState({
     name: "",
@@ -34,7 +33,8 @@ const Form = () => {
     const getCities = async () => {
       const response = await fetch("/api/cities");
       const cities = await response.json();
-      setCities(cities);
+      const cityObjects = cities.map(city => ({ name: city }));
+      setCities(cityObjects);
     };
     getCities();
   }, []);
